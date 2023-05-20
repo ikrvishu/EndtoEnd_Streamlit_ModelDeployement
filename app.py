@@ -36,6 +36,7 @@ input_data = pd.DataFrame([data])
 # step4 : get the predictions and print the result
 prediction = clf.predict(input_data)[0]
 if st.button("Predict"):
+    st.title("Diabetic Prediction")
     if prediction==0:
         st.write("The Person is Healthy")
     if prediction==1:
